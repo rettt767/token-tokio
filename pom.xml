@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ltd.jellyfish</groupId>
+    <artifactId>token-tokio</artifactId>
+    <version>v0.0.1</version>
+
+    <packaging>jar</packaging>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+    </dependencies>
+
+
+
+    <build>
+        <finalName>${project.artifactId}-${version}</finalName>
+    </build>
+
+    <distributionManagement>
+<!--        <snapshotRepository>-->
+<!--            <id>snapshot</id>-->
+<!--            <url>https://gitee.com/PPRCSS/token-tokio/tree/prod</url>-->
+<!--        </snapshotRepository>-->
+        <repository>
+            <id>remote</id>
+            <url>https://gitee.com/PPRCSS/token-tokio/tree/prod</url>
+        </repository>
+    </distributionManagement>
+
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>v0.0.1</id>-->
+<!--            <url>https://gitee.com/PPRCSS/token-tokio/raw/master/release</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
+</project>
